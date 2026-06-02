@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moisés Aldas Moya - Portafolio</title>
+  <!-- Google Fonts: Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Local Stylesheet -->
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body class="dark-theme">
+
+  <!-- Botón Selector de Tema -->
+  <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar Tema">
+    <i class="fa-solid fa-moon theme-icon-dark"></i>
+    <i class="fa-solid fa-sun theme-icon-light"></i>
+  </button>
+
+  <main class="portfolio-container">
+    <div class="bento-grid">
+
+      <!-- Tarjeta 1: Perfil (Video 3D Animado) -->
+      <div class="bento-card card-profile">
+        <div class="profile-image-container">
+          <video src="A_premium_D_cartoon_avatar_o.mp4" autoplay loop muted playsinline class="profile-img"></video>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2: Sobre Mí (Intro) -->
+      <div class="bento-card card-about">
+        <span class="badge-title">Ingeniero en TI & Desarrollador Web</span>
+        <h1>Moisés Aldas Moya</h1>
+        <p class="about-text">
+          Desarrollador enfocado en crear soluciones web versátiles, eficientes y centradas en la experiencia del usuario. De perfil analítico, responsable y reflexivo (más bien introvertido), destaco por mi enfoque al detalle para resolver problemas de forma rápida y oportuna. Disfruto del trabajo en equipo, participando activamente al proponer mejoras innovadoras y apoyar el desarrollo de nuevas ideas y creaciones que generen valor real.
+        </p>
+      </div>
+
+      <!-- Tarjeta 3: Intereses -->
+      <div class="bento-card card-interests">
+        <h3>Intereses</h3>
+        <div class="interests-tags">
+          <span class="tag"><i class="fa-solid fa-code"></i> Desarrollo Web</span>
+          <span class="tag"><i class="fa-solid fa-gamepad"></i> Videojuegos</span>
+          <span class="tag"><i class="fa-solid fa-plane"></i> Viajar</span>
+          <span class="tag"><i class="fa-solid fa-graduation-cap"></i> Aprendizaje</span>
+        </div>
+      </div>
+
+      <!-- Tarjeta 4: Experiencia 1 (Full Stack) -->
+      <div class="bento-card card-experience card-exp1">
+        <div class="card-exp-header">
+          <div>
+            <h3>Desarrollador Full-Stack</h3>
+            <span class="company">Corporación Anfíbius</span>
+          </div>
+          <span class="date-badge">Prácticas</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Desarrollé módulo especializado para creación y detección de rutas óptimas para vendedores, mejorando la eficiencia de distribución.</li>
+          <li>Implementé algoritmos de optimización y visualización en tiempo real con Angular.</li>
+          <li>Diseñé e implementé base de datos en PostgreSQL y servicios backend robustos en Java + RESTful APIs.</li>
+        </ul>
+        <div class="exp-techs">
+          <span class="mini-tech">Angular</span>
+          <span class="mini-tech">Java</span>
+          <span class="mini-tech">PostgreSQL</span>
+          <span class="mini-tech">RESTful APIs</span>
+        </div>
+      </div>
+
+      <!-- Tarjeta 5: Experiencia 2 (Backend & CRM) -->
+      <div class="bento-card card-experience card-exp2">
+        <div class="card-exp-header">
+          <div>
+            <h3>Desarrollador Backend & CRM</h3>
+            <span class="company">Idrix Tecnología</span>
+          </div>
+          <span class="date-badge">Prácticas</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Desarrollé módulos de reportería avanzada y dashboards interactivos para análisis de KPIs empresariales.</li>
+          <li>Configuré y personalicé módulos CRM para optimizar procesos de ventas.</li>
+          <li>Implementé consultas SQL optimizadas e integraciones con sistemas existentes.</li>
+        </ul>
+        <div class="exp-techs">
+          <span class="mini-tech">PHP</span>
+          <span class="mini-tech">MySQL</span>
+          <span class="mini-tech">JavaScript</span>
+          <span class="mini-tech">CRM Systems</span>
+        </div>
+      </div>
+
+      <!-- Tarjeta 6: Experiencia 3 (Soporte & Dev) -->
+      <div class="bento-card card-experience card-exp3">
+        <div class="card-exp-header">
+          <div>
+            <h3>Soporte Técnico y Desarrollo</h3>
+            <span class="company">Clínica Odontológica SONRIENTE</span>
+          </div>
+          <span class="date-badge">2022 - 2024</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Desarrollé y mantuve el sistema de agendamiento de citas, mejorando la eficiencia para más de 200 pacientes mensuales.</li>
+          <li>Brindé soporte técnico remoto y presencial, resolviendo incidencias en menos de 2 horas promedio.</li>
+          <li>Implementé mejoras en base de datos y flujos que redujeron errores de agendamiento en un 35%.</li>
+        </ul>
+      </div>
+
+      <!-- Tarjeta 7: Educación -->
+      <div class="bento-card card-education">
+        <h3>Educación</h3>
+        <div class="education-timeline">
+          <div class="edu-item">
+            <div class="edu-header">
+              <h4>Ing. en Tecnologías de la Información</h4>
+              <span class="edu-date">2019 - 2026</span>
+            </div>
+            <p class="edu-inst">Universidad de las Fuerzas Armadas ESPE</p>
+            <span class="edu-status"><i class="fa-solid fa-circle-check"></i> Graduado (SENESCYT)</span>
+          </div>
+          
+          <div class="edu-item">
+            <div class="edu-header">
+              <h4>Bachiller en Ciencias Generales</h4>
+              <span class="edu-date">2014 - 2020</span>
+            </div>
+            <p class="edu-inst">Colegio Santo Domingo</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 8: Habilidades Técnicas -->
+      <div class="bento-card card-skills">
+        <h3>Habilidades Técnicas</h3>
+        
+        <div class="skill-group">
+          <h4>Lenguajes</h4>
+          <div class="skill-badges">
+            <span class="skill-badge lang-java"><i class="fa-brands fa-java"></i> Java</span>
+            <span class="skill-badge lang-php"><i class="fa-brands fa-php"></i> PHP</span>
+            <span class="skill-badge lang-js"><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span class="skill-badge lang-ts">TypeScript</span>
+            <span class="skill-badge lang-py"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="skill-badge lang-sql"><i class="fa-solid fa-database"></i> SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>Frontend</h4>
+          <div class="skill-badges">
+            <span class="skill-badge tech-angular"><i class="fa-brands fa-angular"></i> Angular</span>
+            <span class="skill-badge tech-react"><i class="fa-brands fa-react"></i> React</span>
+            <span class="skill-badge tech-next">Next.js</span>
+            <span class="skill-badge tech-html"><i class="fa-brands fa-html5"></i> HTML5</span>
+            <span class="skill-badge tech-css"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+            <span class="skill-badge tech-tw">Tailwind CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>Backend & Bases de Datos</h4>
+          <div class="skill-badges">
+            <span class="skill-badge tech-node"><i class="fa-brands fa-node-js"></i> Node.js</span>
+            <span class="skill-badge tech-spring">Spring Boot</span>
+            <span class="skill-badge tech-laravel"><i class="fa-brands fa-laravel"></i> Laravel</span>
+            <span class="skill-badge tech-supabase">Supabase</span>
+            <span class="skill-badge tech-postgres">PostgreSQL</span>
+            <span class="skill-badge tech-mysql">MySQL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 9: Herramientas & DevOps -->
+      <div class="bento-card card-tools">
+        <h3>Herramientas & DevOps</h3>
+        <div class="tools-grid">
+          <span class="tool-item"><i class="fa-brands fa-git-alt"></i> Git</span>
+          <span class="tool-item"><i class="fa-brands fa-github"></i> GitHub</span>
+          <span class="tool-item"><i class="fa-brands fa-docker"></i> Docker</span>
+          <span class="tool-item"><i class="fa-solid fa-square-terminal"></i> Postman</span>
+          <span class="tool-item"><i class="fa-solid fa-code-branch"></i> Prisma</span>
+          <span class="tool-item"><i class="fa-solid fa-mobile-screen-button"></i> Flutter</span>
+          <span class="tool-item"><i class="fa-solid fa-people-group"></i> Scrum</span>
+        </div>
+      </div>
+
+      <!-- Tarjeta 10: Idiomas -->
+      <div class="bento-card card-languages">
+        <h3>Idiomas</h3>
+        <div class="lang-row">
+          <span class="lang-name">Español</span>
+          <span class="lang-level">Nativo 🇪🇨</span>
+        </div>
+        <div class="lang-row">
+          <span class="lang-name">Inglés</span>
+          <span class="lang-level">Intermedio 🇺🇸</span>
+        </div>
+      </div>
+
+      <!-- Tarjeta 11: Proyecto FITCLASS -->
+      <div class="bento-card card-project project-fitclass">
+        <div class="project-header">
+          <div class="project-title-area">
+            <i class="fa-solid fa-dumbbell project-icon"></i>
+            <h3>FITCLASS</h3>
+          </div>
+          <div class="project-badges">
+            <span class="project-badge web">Web</span>
+            <span class="project-badge mobile">Móvil</span>
+          </div>
+        </div>
+        <p class="project-description">
+          Sistema integral para la gestión de clases y centros de fitness. Incluye una aplicación web para la administración y un aplicativo móvil para reservas y seguimiento de clientes.
+        </p>
+        <div class="project-techs">
+          <span class="mini-tech">Next.js</span>
+          <span class="mini-tech">React</span>
+          <span class="mini-tech">Flutter</span>
+          <span class="mini-tech">Node.js</span>
+          <span class="mini-tech">Express</span>
+          <span class="mini-tech">PostgreSQL</span>
+        </div>
+        <div class="project-links-row">
+          <a href="https://github.com/MoisesAldas/FITCLASS.git" target="_blank" class="project-link-btn font-half">
+            <span>Repositorio</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+          <a href="https://fittclass.com" target="_blank" class="project-link-btn font-half live-link">
+            <span>Sitio Web</span> <i class="fa-solid fa-globe"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Tarjeta 12: Proyecto TuTurno -->
+      <div class="bento-card card-project project-tuturno">
+        <div class="project-header">
+          <div class="project-title-area">
+            <i class="fa-solid fa-calendar-check project-icon"></i>
+            <h3>TuTurno</h3>
+          </div>
+          <div class="project-badges">
+            <span class="project-badge saas">SaaS</span>
+            <span class="project-badge demo">Live Demo</span>
+          </div>
+        </div>
+        <p class="project-description">
+          Plataforma SaaS para la gestión de turnos y citas en tiempo real. Elimina filas de espera en negocios mediante reservas en línea, notificaciones automáticas y panel de administración.
+        </p>
+        <div class="project-techs">
+          <span class="mini-tech">Next.js</span>
+          <span class="mini-tech">Supabase</span>
+          <span class="mini-tech">TypeScript</span>
+          <span class="mini-tech">Resend</span>
+          <span class="mini-tech">Google Auth</span>
+          <span class="mini-tech">Tailwind</span>
+        </div>
+        <div class="project-links-row">
+          <a href="https://github.com/MoisesAldas/TuTurnoProduccion.git" target="_blank" class="project-link-btn font-half">
+            <span>Repositorio</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+          <a href="https://turnoapp.org" target="_blank" class="project-link-btn font-half live-link">
+            <span>Sitio Web</span> <i class="fa-solid fa-globe"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Tarjeta 13: Proyecto OficiosYA -->
+      <div class="bento-card card-project project-oficiosya">
+        <div class="project-header">
+          <div class="project-title-area">
+            <i class="fa-solid fa-screwdriver-wrench project-icon"></i>
+            <h3>OficiosYA</h3>
+          </div>
+          <div class="project-badges">
+            <span class="project-badge web">Web</span>
+          </div>
+        </div>
+        <p class="project-description">
+          Plataforma de servicios locales que conecta a clientes con proveedores de oficios técnicos (plomería, electricidad, pintura, etc.) de forma rápida, directa y segura.
+        </p>
+        <div class="project-techs">
+          <span class="mini-tech">HTML5</span>
+          <span class="mini-tech">CSS3</span>
+          <span class="mini-tech">JavaScript</span>
+          <span class="mini-tech">Bootstrap</span>
+          <span class="mini-tech">Tailwind</span>
+        </div>
+        <a href="https://github.com/MoisesAldas/OficiosYA.git" target="_blank" class="project-link-btn">
+          <span>Ver Repositorio</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+
+      <!-- Tarjeta 14: Proyecto WASAPI -->
+      <div class="bento-card card-project project-wasapi">
+        <div class="project-header">
+          <div class="project-title-area">
+            <i class="fa-brands fa-whatsapp project-icon"></i>
+            <h3>WASAPI</h3>
+          </div>
+          <div class="project-badges">
+            <span class="project-badge api">API</span>
+            <span class="project-badge backend">Backend</span>
+          </div>
+        </div>
+        <p class="project-description">
+          API y servicio de backend para la automatización e integración del envío de mensajes masivos, alertas y notificaciones directas a través de la plataforma de WhatsApp.
+        </p>
+        <div class="project-techs">
+          <span class="mini-tech">Node.js</span>
+          <span class="mini-tech">Express</span>
+          <span class="mini-tech">WhatsApp JS</span>
+          <span class="mini-tech">REST APIs</span>
+          <span class="mini-tech">JavaScript</span>
+        </div>
+        <a href="https://github.com/MoisesAldas/wasapi.git" target="_blank" class="project-link-btn">
+          <span>Ver Repositorio</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+
+      <!-- Tarjeta 15: Detalles Personales & Contacto / Redes (Ancho Completo) -->
+      <div class="bento-card card-details-footer">
+        <div class="details-left">
+          <div class="detail-item">
+            <i class="fa-solid fa-cake-candles"></i>
+            <div>
+              <span class="detail-label">Edad</span>
+              <span class="detail-val">24 años</span>
+            </div>
+          </div>
+          <div class="detail-item">
+            <i class="fa-solid fa-earth-americas"></i>
+            <div>
+              <span class="detail-label">País</span>
+              <span class="detail-val">Ecuador</span>
+            </div>
+          </div>
+          <div class="detail-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <span class="detail-label">Email</span>
+              <span class="detail-val"><a href="mailto:moises.aldas@outlook.es">moises.aldas@outlook.es</a></span>
+            </div>
+          </div>
+          <div class="detail-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <span class="detail-label">Teléfono</span>
+              <span class="detail-val"><a href="tel:+593969380735">096-938-0735</a></span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="details-right-socials">
+          <a href="https://github.com/MoisesAldas" target="_blank" class="footer-social-btn github">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+          <a href="https://linkedin.com/in/moisesaldas" target="_blank" class="footer-social-btn linkedin">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Script JS -->
+  <script src="portfolio.js"></script>
+</body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moisés Aldas Moya - CV</title>
+  <style>
+    /* Reset and general styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Arial', 'Helvetica', sans-serif;
+      font-size: 11px;
+      line-height: 1.5;
+      color: #333;
+      background-color: #fff;
+      padding: 20mm 20mm;
+      width: 210mm; /* A4 width */
+      margin: 0 auto;
+    }
+
+    /* Print styles to match A4 and ensure 2 pages */
+    @media print {
+      body {
+        padding: 0;
+        width: 100%;
+        color: #000;
+      }
+      .page-break {
+        page-break-before: always;
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+    }
+
+    /* Header styling */
+    .cv-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 18px;
+    }
+
+    .header-info {
+      flex: 1;
+      padding-right: 20px;
+    }
+
+    .header-info h1 {
+      font-size: 26px;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 6px;
+      letter-spacing: 0.5px;
+    }
+
+    .contact-info, .personal-info, .links {
+      font-size: 10.5px;
+      color: #444;
+      margin-bottom: 4px;
+    }
+
+    .links a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .header-photo {
+      flex-shrink: 0;
+    }
+
+    .header-photo img {
+      width: 90px;
+      height: 110px;
+      object-fit: cover;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    /* Section styling */
+    section {
+      margin-bottom: 15px;
+      page-break-inside: avoid;
+    }
+
+    h2 {
+      font-size: 13px;
+      font-weight: bold;
+      color: #000;
+      text-transform: uppercase;
+      border-bottom: 1.5px solid #000;
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+
+    /* Professional profile */
+    .profile-text {
+      text-align: justify;
+      font-size: 10.5px;
+    }
+
+    /* Lists and bullet points */
+    ul {
+      list-style-type: disc;
+      padding-left: 15px;
+      margin-bottom: 8px;
+    }
+
+    li {
+      margin-bottom: 4px;
+      text-align: justify;
+    }
+
+    /* Technical skills */
+    .skills-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .skill-category {
+      font-size: 10.5px;
+    }
+
+    .skill-category strong {
+      color: #000;
+    }
+
+    /* Job and education entries */
+    .entry {
+      margin-bottom: 12px;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      color: #000;
+      font-size: 11px;
+      margin-bottom: 2px;
+    }
+
+    .entry-subheader {
+      font-style: italic;
+      color: #555;
+      font-size: 10.5px;
+      margin-bottom: 4px;
+    }
+
+    .tech-stack {
+      font-size: 10px;
+      color: #444;
+      margin-top: 4px;
+      margin-bottom: 8px;
+    }
+
+    .tech-stack strong {
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabecera -->
+  <header class="cv-header">
+    <div class="header-info">
+      <h1>MOISÉS ALDAS MOYA</h1>
+      <div class="contact-info">
+        Santo Domingo de los Colorados, Ecuador | 096-938-0735 | moises.aldas@outlook.es
+      </div>
+      <div class="personal-info">
+        C.I.: 1724855406 | Fecha de Nacimiento: 6 de mayo de 2002 (24 años) | Estado Civil: Soltero
+      </div>
+      <div class="links">
+        <a href="https://linkedin.com/in/moisesaldas" target="_blank">linkedin.com/in/moisesaldas</a> | 
+        <a href="https://github.com/MoisesAldas" target="_blank">github.com/MoisesAldas</a>
+      </div>
+    </div>
+    <div class="header-photo">
+      <img src="DSC_4508.jpg.jpeg" alt="Moisés Aldas Moya">
+    </div>
+  </header>
+
+  <!-- Perfil Profesional -->
+  <section>
+    <h2>Perfil Profesional</h2>
+    <p class="profile-text">
+      Ingeniero en Tecnologías de la Información (título registrado en la SENESCYT) especializado en desarrollo web full-stack. Experiencia práctica en Angular, Java, PHP, Next.js y Supabase. He desarrollado módulos de rutas óptimas para vendedores, sistemas CRM con reportería y dashboards, y actualmente estoy creando TuTurno, una plataforma SaaS de gestión de reservas que elimina filas de espera. Enfocado en entregar soluciones escalables, centradas en el usuario y listas para producción. Abierto a oportunidades presenciales o remotas como Desarrollador Full-Stack Junior en Ecuador.
+    </p>
+  </section>
+
+  <!-- Habilidades Técnicas -->
+  <section>
+    <h2>Habilidades Técnicas</h2>
+    <div class="skills-grid">
+      <div class="skill-category"><strong>Lenguajes:</strong> Java, PHP, JavaScript, TypeScript, Python, SQL</div>
+      <div class="skill-category"><strong>Frontend:</strong> Angular, React, Next.js, HTML5, CSS3, Tailwind CSS, Bootstrap</div>
+      <div class="skill-category"><strong>Backend:</strong> Node.js, Express, Spring Boot, Laravel, .NET, RESTful APIs</div>
+      <div class="skill-category"><strong>Bases de Datos:</strong> PostgreSQL, MySQL, MongoDB, SQL Server, Supabase</div>
+      <div class="skill-category"><strong>Herramientas & DevOps:</strong> Git, GitHub, Docker, Postman, Prisma</div>
+      <div class="skill-category"><strong>Mobile:</strong> Flutter, Expo, React Native</div>
+      <div class="skill-category"><strong>Metodologías:</strong> Scrum, Kanban, Desarrollo Ágil, Microservicios</div>
+      <div class="skill-category"><strong>Otras:</strong> Resolución de problemas, Trabajo en equipo, Comunicación efectiva</div>
+    </div>
+  </section>
+
+  <!-- Prácticas Profesionales -->
+  <section>
+    <h2>Prácticas Profesionales</h2>
+    
+    <div class="entry">
+      <div class="entry-header">
+        <span>Desarrollador Full-Stack</span>
+        <span>Corporación Anfíbius</span>
+      </div>
+      <ul>
+        <li>Desarrollé módulo especializado para creación y detección de rutas óptimas para vendedores, mejorando la eficiencia de distribución.</li>
+        <li>Implementé algoritmos de optimización y visualización en tiempo real con Angular.</li>
+        <li>Diseñé e implementé base de datos en PostgreSQL y servicios backend robustos en Java + RESTful APIs.</li>
+      </ul>
+      <div class="tech-stack"><strong>Tecnologías:</strong> Angular, Java, PostgreSQL, RESTful APIs.</div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span>Desarrollador Backend y CRM</span>
+        <span>Idrix Tecnología</span>
+      </div>
+      <ul>
+        <li>Desarrollé módulos de reportería avanzada y dashboards interactivos para análisis de KPIs empresariales.</li>
+        <li>Configuré y personalicé módulos CRM para optimizar procesos de ventas.</li>
+        <li>Implementé consultas SQL optimizadas e integraciones con sistemas existentes.</li>
+      </ul>
+      <div class="tech-stack"><strong>Tecnologías:</strong> PHP, MySQL, JavaScript, CRM Systems.</div>
+    </div>
+  </section>
+
+  <!-- Experiencia Laboral -->
+  <section>
+    <h2>Experiencia Laboral</h2>
+    
+    <div class="entry">
+      <div class="entry-header">
+        <span>Soporte Técnico y Desarrollo</span>
+        <span>Clínica Odontológica SONRIENTE</span>
+      </div>
+      <div class="entry-subheader">Abril 2022 – Abril 2024</div>
+      <ul>
+        <li>Desarrollé y mantuve el sistema de agendamiento de citas, mejorando la eficiencia para más de 200 pacientes mensuales.</li>
+        <li>Brindé soporte técnico remoto y presencial, resolviendo incidencias en aplicaciones en menos de 2 horas promedio.</li>
+        <li>Implementé mejoras en base de datos y flujos que redujeron errores de agendamiento en un 35%.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Salto de página para el PDF -->
+  <div class="page-break"></div>
+
+  <!-- Proyectos Destacados -->
+  <section style="margin-top: 15px;">
+    <h2>Proyectos Destacados</h2>
+    
+    <div class="entry">
+      <div class="entry-header">
+        <span>TuTurno – Sistema de Gestión de Turnos y Citas</span>
+        <span>Proyecto Personal | En desarrollo (2025 – actual)</span>
+      </div>
+      <div class="entry-subheader">
+        <a href="https://turnoapp.org" target="_blank">turnoapp.org</a> | 
+        <a href="https://github.com/MoisesAldas/TuTurnoProduccion" target="_blank">github.com/MoisesAldas/TuTurnoProduccion</a>
+      </div>
+      <p style="font-size: 10.5px; margin-bottom: 6px;">Plataforma web full-stack para gestionar citas y eliminar filas de espera en negocios.</p>
+      <ul>
+        <li>Reservas en tiempo real con disponibilidad actualizada.</li>
+        <li>Panel de administración completo y autenticación con Google OAuth.</li>
+        <li>Notificaciones automáticas por email (Resend) y dashboard analítico con recordatorios.</li>
+      </ul>
+      <div class="tech-stack"><strong>Tecnologías:</strong> Next.js (App Router), Supabase, TypeScript, Tailwind CSS, React Server Components, Google Auth, Resend.</div>
+    </div>
+  </section>
+
+  <!-- Educación -->
+  <section>
+    <h2>Educación</h2>
+    
+    <div class="entry">
+      <div class="entry-header">
+        <span>Ingeniero en Tecnologías de la Información</span>
+        <span>2019 – 2026</span>
+      </div>
+      <div class="entry-subheader">Universidad de las Fuerzas Armadas del Ecuador (ESPE) | Graduado (Título registrado en SENESCYT)</div>
+    </div>
+
+    <div class="entry" style="margin-top: 8px;">
+      <div class="entry-header">
+        <span>Bachiller en Ciencias Generales</span>
+        <span>2014 – 2020</span>
+      </div>
+      <div class="entry-subheader">Colegio Santo Domingo</div>
+    </div>
+  </section>
+
+  <!-- Certificaciones y Cursos -->
+  <section>
+    <h2>Certificaciones y Cursos</h2>
+    
+    <div class="entry" style="margin-bottom: 8px;">
+      <div class="entry-header">
+        <span>Certificado de Iniciación al Desarrollo con IA</span>
+        <span>Marzo 2026</span>
+      </div>
+      <div class="entry-subheader">BIG School – 'Desarrollo con IA: de 0 a Producción' | 6 horas</div>
+    </div>
+
+    <div class="entry" style="margin-bottom: 8px;">
+      <div class="entry-header">
+        <span>Atención a Usuarios con Enfoque a la Calidad e Innovación Tecnológica</span>
+        <span>Diciembre 2024</span>
+      </div>
+      <div class="entry-subheader">Universidad Estatal de Milagro | 40 horas (Virtual)</div>
+    </div>
+
+    <div class="entry" style="margin-bottom: 8px;">
+      <div class="entry-header">
+        <span>Administrador de Base de Datos</span>
+        <span>Julio 2022</span>
+      </div>
+      <div class="entry-subheader">Capacítate para el Empleo | 83 horas</div>
+    </div>
+
+    <div class="entry" style="margin-bottom: 8px;">
+      <div class="entry-header">
+        <span>Lógica de Programación</span>
+        <span>Enero 2022</span>
+      </div>
+      <div class="entry-subheader">Capacítate para el Empleo | 60 horas</div>
+    </div>
+  </section>
+
+</body>
+</html>
